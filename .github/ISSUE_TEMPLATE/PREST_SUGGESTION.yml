@@ -62,7 +62,7 @@ body:
     description: Has this addon been tested?
     options:
       - I have tested this addon with the preset I want it added to and found no issues
-      - I have tested this mod addon ith the preset I want it added to and there were issues that need to be looked into
+      - I have tested this mod addon with the preset I want it added to and there were issues that need to be looked into
       - I have not personally tested this addon 
   validations:
     required: true
