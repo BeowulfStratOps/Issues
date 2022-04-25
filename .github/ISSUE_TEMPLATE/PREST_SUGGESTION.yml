@@ -6,6 +6,8 @@ body:
 - type: markdown
   attributes:
     value: |
+      **PLEASE UPDATE THE TITLE OF THE ISSUE**
+
       Thanks for taking the time to suggest a mod for the preset. Ideally, please test it first
 
 - type: dropdown
@@ -53,7 +55,7 @@ body:
     placeholder: |
       I promise I will use it in missions, honest 
   validations:
-    required: true
+    required: false
 
 - type: dropdown
   id: testing
