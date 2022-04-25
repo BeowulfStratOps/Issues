@@ -1,0 +1,80 @@
+name: Preset Addon Suggestion
+description: Suggest a new addon for the preset
+title: "[Preset-Suggestion]: <MOD NAME>"
+labels: ["Preset Suggestion"]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to suggest a mod for the preset. Ideally, please test it first
+
+- type: dropdown
+  id: preset
+  attributes:
+    label: Preset
+    description: Which preset do you wish to add the mod to?
+    options:
+      - Standard
+      - Vietnam
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Addon Name
+    description: Name of the addon
+    placeholder: |
+      Super awesome elite nightvision mod 
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Why the addon should be added
+    description: A brief (but good) reason for the addon to be added
+    placeholder: |
+      I am unable to play dress up sim 2022 without this specific obscure night pair of night vision used by 4 people in a raid in 2014 
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Link to addon
+    description: Link to download the addon (ideally on Steam workshop)
+    placeholder: |
+      https://steamcommunity.com/sharedfiles/filedetails/?id=313041182
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Additional Notes
+    description: Anything else you want to tell us about this addon
+    placeholder: |
+      I promise I will use it in missions, honest 
+  validations:
+    required: true
+
+- type: dropdown
+  id: testing
+  attributes:
+    label: Testing Status
+    description: Has this addon been tested?
+    options:
+      - I have tested this addon with the preset I want it added to and found no issues
+      - I have tested this mod addon ith the preset I want it added to and there were issues that need to be looked into
+      - I have not personally tested this addon 
+  validations:
+    required: true
+
+- type: dropdown
+  id: author
+  attributes:
+    label: Addon Author
+    description: Who made the addon
+    options:
+      - I am the author of this addon
+      - The author is another member of Beowulf
+      - The addon comes from the wider arma community
+  validations:
+    required: true
