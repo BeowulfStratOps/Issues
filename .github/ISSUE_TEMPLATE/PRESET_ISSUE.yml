@@ -1,0 +1,49 @@
+name: Preset Issue
+description: Report an issue with the preset
+title: "[Preset-Issue]: <title>"
+labels: ["preset"]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to report an issue with the preset
+
+- type: dropdown
+  id: preset
+  attributes:
+    label: Preset
+    description: Which preset is the issue in?
+    options:
+      - Standard
+      - Vietnam
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Issue description
+    description: A brief description of the issue
+    placeholder: |
+      A brief, concise, short description of the issue which you were expericing which caused you to create this issue
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Expected Outcome
+    description: What you expected to actually happen
+    placeholder: |
+      Describe what you expected to happen
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Steps to reproduce the behavior.
+    placeholder: |
+      1. I did this thing 
+      2. Then I did this 
+      3. Then my PC caught fire
+  validations:
+    required: true
